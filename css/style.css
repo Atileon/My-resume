@@ -2,14 +2,14 @@
 ON LAYOUT. THE BACKGROUND IS A PATTERN IMMAGE
 IT'S HOWEVER CONSIDERED AN IMAGE. THANKS TO EVERYONE*/
 
-
+* { margin:0; padding:0; box-sizing:border-box; }
 
 
 /*GENERAL STYLE*/
 html{
   font-size: 16px;
-  padding: 0;
-  margin: 0;
+  padding: 0px;
+  margin: 0px;
 }
 body{
   color: #fff;
@@ -17,17 +17,41 @@ body{
   font-family: Exo, Arial, sans-serif;
   font-weight: lighter;
   letter-spacing: .1em;
-  padding: 0;
-  margin: auto;
+  padding: 0px;
+  margin: 0px;
 }
+
+/*=============================================
+      FLOATING SECTIONS
+================================================*/
+
+aside.sidebar{
+  width: 200px;
+  height: 1200px;
+  text-align: center;
+  float: left;
+  margin: 0;
+  padding: 0;
+  background: #827036;
+}
+.sidebar h2{
+  font-size: 1em;
+}
+.sidebar .list-footer-nav li>span{
+  font-size: 1em;
+}
+
 main{
-  width: 80%;
-  margin: auto;
+  margin-left: 310px;
+  width: 100%;
+
 }
 /*Headings*/
 h1{
+  margin-top:1em;
   font: bolder 3.2em ExoExtraBold, sans-serif;
   font-weight: bolder;
+  margin: 0px;
 }
 h2{
   font: italic bold 1.8em ExoBoldIt, sans-serif;
@@ -107,6 +131,7 @@ footer{
   height: 300px;
   margin: 0;
   padding: 0;
+  clear: both;
   background-color: #000;
 }
 .contact-section{
@@ -126,6 +151,12 @@ footer{
 .list-footer-nav li span{
   color: #860202;
 }
+
+
+/*=====================================================
+        FONTFACE SETTINGS
+======================================================*/
+
 
 /*FONTFACE EXO-LIGHT*/
 @font-face {
