@@ -1,7 +1,7 @@
 /*PLEASE READ THE COMMENTS TO GUIDE YOU
 ON LAYOUT. THANKS TO EVERYONE*/
 
-* { margin:0; padding:0; box-sizing:border-box; }
+* { margin:0; padding:0; -webkit-box-sizing:border-box; box-sizing:border-box; }
 
 
 /*GENERAL STYLE*/
@@ -34,7 +34,8 @@ aside.sidebar{
   margin: 0;
   padding: 0;
   background: #151515;
-  box-shadow: 3px 0 10px #000;
+  -webkit-box-shadow: 3px 0 10px #000;
+          box-shadow: 3px 0 10px #000;
 }
 section.contact-section{
   border: 0px;
@@ -87,7 +88,7 @@ ul.section-list li::before{
   display: inline;
   width: 1em;
 }
- 
+
 /*HEADER STYLE*/
 
 header{
@@ -102,7 +103,8 @@ header a img{
   right: 2em;
   border: solid 4px #f96435;
   border-radius: 5px 5px;
-  box-shadow: 3px 3px 5px #000;
+  -webkit-box-shadow: 3px 3px 5px #000;
+          box-shadow: 3px 3px 5px #000;
 }
 header h1.name{
   padding: 1em;
