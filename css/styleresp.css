@@ -1,0 +1,271 @@
+/*PLEASE READ THE COMMENTS TO GUIDE YOU
+ON LAYOUT. THANKS TO EVERYONE*/
+
+* { margin:0; padding:0; -webkit-box-sizing:border-box; box-sizing:border-box; }
+
+
+/*GENERAL STYLE*/
+html{
+  font-size: 16px;
+  padding: 0px;
+  margin: 0px;
+}
+body{
+  color: #fff;
+  background: url("../img/micro_carbon.png") repeat;
+  font-family: Exo, Arial, sans-serif;
+  font-weight: lighter;
+  letter-spacing: .1em;
+  padding: 0px;
+  margin: 0px;
+}
+
+
+
+/*=============================================
+      FLOATING SECTIONS
+================================================*/
+
+aside.sidebar{
+  width: 250px;
+  height: 1200px;
+  text-align: center;
+  float: left;
+  margin: 0;
+  padding: 0;
+  background: #151515;
+  -webkit-box-shadow: 3px 0 10px #000;
+          box-shadow: 3px 0 10px #000;
+}
+section.contact-section{
+  border: 0px;
+  width: 100%;
+  margin-top: 5em;
+}
+.sidebar h2{
+  font-size: 1.2em;
+  text-align: center;
+  margin-bottom: 1em;
+}
+.sidebar .list-footer-nav li>span{
+  font-size: 1em;
+}
+
+
+/*===============================================
+        MAIN SECTION
+===============================================*/
+main{
+margin-left: 250px;
+}
+/*Headings*/
+h1{
+  margin-top:1em;
+  font: bolder 3.2em ExoExtraBold, sans-serif;
+  font-weight: bolder;
+  margin: 0px;
+}
+h2{
+  font: italic bold 1.8em ExoBoldIt, sans-serif;
+}
+
+/*LINKS*/
+a, a:visited{
+  color: #f96435;
+  text-decoration:none;
+}
+a:hover{
+  color: #fff;
+}
+
+/*    LISTS   */
+ul{
+  list-style: none;
+}
+ul.section-list li::before{
+  content: '>  ';
+  color: #f96435;
+  display: inline;
+  width: 1em;
+}
+
+/*HEADER STYLE*/
+
+header{
+  position: relative;/*this for the picture in absolute*/
+  text-align: center;
+  margin-bottom: 5em;
+  border-bottom: dotted .5px #f96435;
+}
+header div.name-description, header figure.photocv{
+}
+header div.name-description{
+  width: 90%;
+  margin-bottom: 1em;
+}
+figure.photocv{
+  position: absolute;
+  top: 2em;
+  right: 2em;
+}
+
+header a img{
+  border: solid 4px #f96435;
+  border-radius: 5px 5px;
+  -webkit-box-shadow: 3px 3px 5px #000;
+          box-shadow: 3px 3px 5px #000;
+}
+header h1.name{
+  padding: 1em;
+}
+
+/* The next rule changes the STRONG tag color text too */
+h1.name, section h2, footer h2, strong{
+  color: #f96435;
+  text-shadow: 5px 5px 7px #000;
+  text-transform: uppercase;
+}
+p.cv-details{
+  color:#f96435;
+}
+
+/*       FORMAT OF SECTIONS    */
+main section{
+  display: inline-block;
+  vertical-align: top;
+  width: 25%;
+  margin: auto;
+  margin-top: 1.5em;
+  line-height: 2;
+  margin-left: 3em;
+}
+
+/*====================================
+  LIST OF SECTIONS STYLE
+==============================*/
+ul.section-list{
+  text-indent: 2em;
+}
+.section-list li em{
+  color: #f96435;
+  font: italic lighter 1.2em ExoLightIt, sans-serif;
+  text-transform: uppercase;
+  word-spacing: .5em;
+}
+
+/*============================
+    EDU SECTION STYLE
+=============================*/
+.edu-section{
+  border: none;
+  margin-bottom: 5em;
+}
+
+/*FOOTER SECTION*/
+footer{
+  display: none;
+}
+
+/*=====================================================
+      MEDIA QUERIES
+======================================================*/
+@media screen and (max-width: 480px) {
+/*This would make disappear the sidebar*/
+  aside{
+    display: none;
+  }
+  /*=================================*/
+  main{
+    margin:0 auto;
+    width: 90%;
+  }
+  main section{
+    display: block;
+    margin: 0 auto;
+    width:100%;
+  }
+  ul.section-list li{
+    margin: 1em auto;
+  }
+
+  footer{
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+  }
+
+  .contact-section{
+    width: 80%;
+    margin: 0 auto;
+    border: none;
+    padding: 20px;
+  }
+  .footer-nav{
+    width: 50%;
+    margin: auto;
+    word-spacing: 1em;
+  }
+  .contact-section .footer-nav ul li{
+    display: inline-block;
+  }
+  .list-footer-nav li span{
+    color: #860202;
+  }
+
+}
+
+@media screen and (max-width: 768px){
+    main section{
+      display: block;
+      width: 80%;
+    }
+    header div.name-description{
+      width: 100%;
+    }
+    figure.photocv{
+       position: initial;
+    }
+}
+
+/*=====================================================
+        FONTFACE SETTINGS
+======================================================*/
+
+
+/*FONTFACE EXO-LIGHT*/
+
+@font-face {
+  font-family: 'Exo';
+  src: url('Exo-Light.otf');
+  font-weight:  lighter;
+}
+
+/*FONTFACE EXO-LIGHT-ITALIC*/
+@font-face {
+  font-family: 'ExoLightIt';
+  src: url('Exo-LightItalic.otf');
+  font-weight: lighter;
+  font-style: italic;
+}
+
+/*FONTFACE EXO-BOLD*/
+@font-face {
+  font-family: 'ExoBold';
+  src: url('Exo-Bold.otf');
+  font-weight: bold;
+}
+/*FONTFACE EXO-BOLD-ITALIC*/
+@font-face {
+  font-family: 'ExoBoldIt';
+  src: url('Exo-BoldItalic.otf');
+  font-weight: bold;
+  font-style: italic;
+}
+/*FONTFACE EXO-EXTRABOLD*/
+@font-face {
+  font-family: 'ExoExtraBold';
+  src: url('Exo-ExtraBold.otf');
+  font-weight: bolder;
+}
