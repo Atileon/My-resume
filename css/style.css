@@ -74,7 +74,6 @@ ul.section-list li::before{
   content: '>  ';
   color: #f96435;
   display: inline;
-  width: 1em;
 }
 
 /*HEADER STYLE*/
